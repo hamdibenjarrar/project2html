@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Italian Delights Menu</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            text-align: center;
+            color: #e74c3c;
+            font-size: 3rem;
+            margin-top: 40px;
+            font-weight: bold;
+        }
+
+        h2 {
+            color: #27ae60;
+            font-size: 2.5rem;
+            margin-top: 40px;
+            border-bottom: 4px solid #e74c3c;
+            padding-bottom: 8px;
+        }
+
+        /* Menu List Styling */
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        li {
+            background-color: #ecf0f1;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        li:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        li strong {
+            font-size: 1.4rem;
+            color: #2980b9;
+        }
+
+        li p {
+            color: #7f8c8d;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        /* Image Styling for Main Courses */
+        .menu-image {
+            width: 250px;
+            height: auto;
+            border-radius: 8px;
+            animation: moveIn 10s ease-in-out infinite;
+        }
+
+        @keyframes moveIn {
+            0% {
+                transform: translateX(-300px);
+                opacity: 0;
+            }
+
+            50% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateX(300px);
+                opacity: 0;
+            }
+        }
+
+        /* Contact Link Styling */
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #2980b9;
+            text-decoration: none;
+            padding: 12px;
+            border: 2px solid #2980b9;
+            border-radius: 8px;
+            width: 220px;
+            margin: 0 auto;
+            background-color: #ecf0f1;
+        }
+
+        a:hover {
+            background-color: #2980b9;
+            color: #fff;
+        }
+
+        /* Footer Styling */
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+
+        /* Side Floating Motion for Creativity */
+        .side-motion {
+            position: fixed;
+            top: 10%;
+            right: 10px;
+            font-size: 4rem;
+            color: #e74c3c;
+            animation: float 5s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Side Motion Decorative Element (Creative Floating Emoji) -->
+    <div class="side-motion">🍝</div>
+
+    <!-- Header Section -->
+    <h1>Italian Delights Menu</h1>
+
+    <!-- Appetizers Section -->
+    <h2>Appetizers</h2>
+    <ul>
+        <li>
+            <strong>Bruschetta</strong>
+            <p>Grilled bread topped with diced tomatoes, garlic, and olive oil. A classic Italian starter.</p>
+        </li>
+        <li>
+            <strong>Caprese Salad</strong>
+            <p>Fresh mozzarella, basil, and tomatoes drizzled with balsamic glaze. A refreshing appetizer.</p>
+        </li>
+        <li>
+            <strong>Fried Calamari</strong>
+            <p>Crispy calamari served with marinara sauce, perfect for sharing.</p>
+        </li>
+    </ul>
+
+    <!-- Main Courses Section -->
+    <h2>Main Courses</h2>
+    <ul>
+        <li>
+            <strong>Grilled Salmon</strong>
+            <p>Salmon fillet grilled to perfection with a fresh lemon butter sauce.</p>
+            <img src="ima.jpg" alt="Grilled Salmon" class="menu-image">
+        </li>
+        <li>
+            <strong>Lasagna</strong>
+            <p>Classic Italian lasagna made with layers of pasta, ricotta, marinara sauce, and mozzarella.</p>
+        </li>
+        <li>
+            <strong>Risotto Primavera</strong>
+            <p>Creamy risotto made with fresh seasonal vegetables and Parmesan cheese.</p>
+        </li>
+    </ul>
+
+    <!-- Desserts Section -->
+    <h2>Desserts</h2>
+    <ul>
+        <li>
+            <strong>Tiramisu</strong>
+            <p>Classic Italian dessert made with espresso-soaked ladyfingers and mascarpone cream.</p>
+        </li>
+        <li>
+            <strong>Gelato</strong>
+            <p>Italian-style ice cream, rich and creamy, served in various flavors.</p>
+        </li>
+        <li>
+            <strong>Ricotta Cheesecake</strong>
+            <p>Light and fluffy cheesecake made with ricotta cheese and topped with fresh berries.</p>
+        </li>
+    </ul>
+
+    <!-- Contact Link -->
+    <a href="https://drive.google.com/drive/folders/1ab4rqGHgzmyjOodr7mNyMOGnRtDX3LuI?usp=share_link">Contact us for reservations</a>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Italian Delights. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
